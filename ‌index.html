@@ -3,25 +3,32 @@
 <head>
   <title>Lab 2</title>
   <meta charset="utf-8" />
+  <link rel="stylesheet" href="New Text Document.css">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css" />
   <link rel="stylesheet" media="screen" href="css/screen.css" />
 </head>
 <body>
 <h3>User Form</h3>
-
 <div>
-  <form action="/action_page.php">
+<form>
     <label for="fname">Email</label>
-    <input type="text" id="fname" name="email" placeholder="Your email..">
+    <input type="text" id="fname" name="email"  placeholder="Your email.." >
 
     <label for="lname">Phone number</label>
-    <input type="text" id="lname" name="phonenum" placeholder="Phonenumber">
+    <input type="text" id="lname" name="phonenum"  placeholder="Phonenumber">
 
-        <label for="lname">date of brith</label>
-    <input type="text" id="lname" name="brith" placeholder="Brithday">
-  
-    <input type="submit" value="Submit">
+  <label for="birthday">Date of brith</label>
+  <input type="date" id="birthday" name="birthday" >
+  <input type="submit" value="Submit" onclick="myFunction()">
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Thank you";
+}
+</script>
   </form>
 </div>
 </body>
